@@ -1,0 +1,295 @@
+\hsection{SQL}%
+%
+\gdef\sqlDialect{\glsShort{SQL}~(\postgresql)}%
+%
+\begin{question}{SQL}%
+\begin{itemize}%
+\item[EN] What is \glsShort{SQL}? %
+For which kind of database is it used?%
+\item[DE] Was ist \glsShort{SQL}? %
+Für welche Art von Datenbank wird es benutzt?
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Create a User / Benutzer Erstellen}%
+\begin{itemize}%
+\item[EN] Write down the \sqlDialect\ command for creating a new user \inQuotes{otto}.%
+\item[DE] Schreiben Sie das \sqlDialect\ Kommando, um einen neuen Benutzer \inQuotes{otto} zu erstellen.%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Create a Database / Datenbank Erstellen}%
+\begin{itemize}%
+\item[EN] Write down the \sqlDialect\  command for creating a new database \inQuotes{production} for user \inQuotes{anna}.%
+\item[DE] Schreiben Sie das \sqlDialect\ Kommando, um eine neue Datenbank \inQuotes{production} für Benutzer \inQuotes{anna} zu erstellen.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Create a Table / Tabelle Erstellen}%
+\begin{itemize}%
+\item[EN] Provide the general syntax and structure of the command for creating a table using \sqlDialect. %
+Explain each element, such as table name, column names, datatypes, and constraints.%
+\item[DE] Geben Sie die generelle Syntax und Struktur des Kommandos zum Erstellen von Tabellen mit \sqlDialect\ an. %
+Erklären Sie jedes Element, wie Tabellenname, Spaltenname, Datentyp, und Einschränkungen.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Datatypes / Datentypen}%
+\begin{itemize}%
+\item[EN] Name UND explain four different datatypes of \sqlDialect. %
+Provide one use case for each of these datatypes.%
+\item[DE] Nennen UND erklären Sie vier verschiedene Datentypen von \sqlDialect. %
+Geben Sie jeweils eine Anwendung für jeden der dieser Datentypen an.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Create a Table / Tabelle Erstellen}%
+\begin{itemize}%
+\item[EN] Provide the \sqlDialect\ command to create a table \inQuotes{cars} with the following columns:%
+\begin{itemize}%
+\item \inQuotes{name}: a character string of reasonable length~(must be unique),%
+\item \inQuotes{price}: the costs of one such car in RMB~(must always be provided),%
+\item \inQuotes{top\_speed}: the maximum speed.
+\end{itemize}%
+%
+\item[DE] Geben Sie das \sqlDialect\ Kommand an, um eine Tabelle \inQuotes{cars} mit den folgenden Spalten zu erstellen:%
+\begin{itemize}%
+\item \inQuotes{name}: ein Text vernünftiger Länge, der eindeutig/einmalig sein muss,%
+\item \inQuotes{price}: die Kosten eines solchen Autos in RMB~(muss immer angegeben werden),%
+\item \inQuotes{top\_speed}: die Maximalgeschwindigkeit.
+\end{itemize}%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{create_table_01}{}{questions/create_table_01.sql}%
+\listingSQL{create_table_01}{Das \sqlDialect\ script \programUrl{create_table_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Explain each one of its lines.%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Erklären Sie jede einzelne seiner Zeilen.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_01}{}{questions/select_01.sql}%
+\listingSQL{select_01}{Das \sqlDialect\ script \programUrl{select_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{insert_01}{}{questions/insert_01.sql}%
+\listingSQL{insert_01}{Das \sqlDialect\ script \programUrl{insert_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist and which datatypes should they have for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren und welche Datentypen sollten sie haben, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_02}{}{questions/select_02.sql}%
+\listingSQL{select_02}{Das \sqlDialect\ script \programUrl{select_02}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{create_view_01}{}{questions/create_view_01.sql}%
+\listingSQL{create_view_01}{Das \sqlDialect\ script \programUrl{create_view_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Explain this in detail.%
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Erklären Sie das im Detail. %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{insert_02}{}{questions/insert_02.sql}%
+\listingSQL{insert_02}{Das \sqlDialect\ script \programUrl{insert_02}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_03}{}{questions/select_03.sql}%
+\listingSQL{select_03}{Das \sqlDialect\ script \programUrl{select_03}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{delete_01}{}{questions/delete_01.sql}%
+\listingSQL{delete_01}{Das \sqlDialect\ script \programUrl{delete_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_04}{}{questions/select_04.sql}%
+\listingSQL{select_04}{Das \sqlDialect\ script \programUrl{select_04}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{update_02}{}{questions/update_02.sql}%
+\listingSQL{update_02}{Das \sqlDialect\ script \programUrl{update_02}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_05}{}{questions/select_05.sql}%
+\listingSQL{select_05}{Das \sqlDialect\ script \programUrl{select_05}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{update_03}{}{questions/update_03.sql}%
+\listingSQL{update_03}{Das \sqlDialect\ script \programUrl{update_03}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_06}{}{questions/select_06.sql}%
+\listingSQL{select_06}{Das \sqlDialect\ script \programUrl{select_06}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{update_01}{}{questions/update_01.sql}%
+\listingSQL{update_01}{Das \sqlDialect\ script \programUrl{update_01}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_07}{}{questions/select_07.sql}%
+\listingSQL{select_07}{Das \sqlDialect\ script \programUrl{select_07}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_08}{}{questions/select_08.sql}%
+\listingSQL{select_08}{Das \sqlDialect\ script \programUrl{select_08}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_09}{}{questions/select_09.sql}%
+\listingSQL{select_09}{Das \sqlDialect\ script \programUrl{select_09}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{select_10}{}{questions/select_10.sql}%
+\listingSQL{select_10}{Das \sqlDialect\ script \programUrl{select_10}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Command Understanding / Kommando Verstehen}%
+\gitLoadSQL{update_04}{}{questions/update_04.sql}%
+\listingSQL{update_04}{Das \sqlDialect\ script \programUrl{update_04}}%
+\begin{itemize}%
+\item[EN] What does the above \sqlDialect\ command do? %
+Which tables and columns must exist for this command to work?%
+\item[DE] Was macht das \sqlDialect\ Kommando oben? %
+Welche Tabellen und Spalten müssen existieren, damit dieses Kommando funktioniert?%
+\end{itemize}%
+\end{question}%
+%
+%
+\endhsection%
