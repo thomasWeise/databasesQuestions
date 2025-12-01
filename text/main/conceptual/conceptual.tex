@@ -1,0 +1,173 @@
+\hsection{Conceptual Modeling / Konzeptuelle Modellierung}%
+%
+%
+\begin{question}{ERDs: Büros / Offices}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Every office has a room number. %
+Every employee has a name, title, and worker's number. %
+Every office offers some work stations, each of which having a station number. %
+Every employee occupies one of the work stations, starting from a certain date. %
+Every office has one or multiple telephones, each with a certain phone number.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Jedes Büro hat eine Zimmernummer. %
+Jeder Mitarbeiter hat einen Name, Titel, und Arbeiternummer. %
+Jedes Büro bietet eine Menge von Arbeitsplätzen, die jeweils eine Platznummer haben. %
+Jeder Mitarbeiter sitzt ab einem gewissen Datum an einem der Arbeitsplätze. %
+In jedem Büro gibt es ein or mehrere Telefone mit jeweils einer festen Telefonnummer.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Furniture / Möbel}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+A furniture store sells furniture. %
+Each type of furniture has a type-ID, a name, and a price. %
+It can be purchased and sold in variants, which are characterized by a name, color, and wood pattern. %
+It is produced by a vendor, which is characterized by a vendor-ID, a name, and an address. %
+The store has several warehouses, each of which has a name and stores amounts for different variant of different furniture types.
+The company has salespeople~(employee-ID, name, date of birth, date of hiring, salary).
+A salesperson can acquire and be responsible for arbitrarily many customers~(customer-ID, name, address).
+The customers can issue purchase orders, characterized by an order-ID, furniture variant, amount, and deadline.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Ein Möbelladen verkauft Möbel. %
+Jeder Möbel-Typ hat eine Typ-ID, einen Namen, und einen Preis. %
+Möbel eines Types kann in verschiedenen Varianten gekauft und verkauft werden, welche jeweils einen Namen, eine Farbe und eine Holzmaserung aufweisen. %
+Ein Möbeltyp wird von einem Anbieter hergestellt, der eine Anbieter-ID, einen Namen, und eine Adresse hat. %
+Jede der Lagerhalle des Möbelladens hat einen Namen und kann Anzahlen verschiedener Varianten verschiedener Möbeltypen speichern. %
+Der Laden hat Verkäufer~(Verkäufer-ID, Name, Geburtsdatum, Einstellungsdatum, Gehalt).
+Ein Verkäufer kann beliebig viele Kunden~(Kunden-ID, Name, Adresse) anwerben und für diese verantwortlich sein. %
+Ein Kunde kann Bestellungen aufgeben, die jeweils eine Bestellungs-ID, Variante eines Möbeltyps, Anzahl, und Deadline haben.%
+%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Soccer / Fußball}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+We develop a soccer \db. %
+Every player has a name and age.
+Ever game takes place on a certain game day. %
+Every team has a name and a hometown. %
+In each game, one team participates as home team and one as guest team. %
+We store which player plays in which game, together with the starting and ending minute of their participation. %
+Every team has a trainer, of whom we store name and age.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Es wird eine Fußballdatenbank entwickelt. %
+Jeder Spieler hat einen Namen und ein Alter. %
+Jedes Spiel findet an einem Spieltag statt. %
+Jede Mannschaft hat einen Namen und einen Heimatort. %
+An jedem Spiel nimmt eine Mannschaft als Heimteam und eine Mannschaft als Gast teil. %
+Es wird gespeichert, an welchem Spiel welcher Spieler teilgenommen hat, und zwar jeweils die Anfangs- und die Ende-Minute seines Einsatzes. %
+Jede Mannschaft hat einen Trainer, dessen Name und Alter gespeichert werden.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Airline / Fluggesellschaft}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Every airline has a name, home country, hometown, and abbreviation. %
+An airplane has an airplane number and date of last inspection. %
+Each airplane belongs to a given type, which is described by its name, number of seats, and top speed. %
+Each airplane also belongs to a given airline since a certain date. %
+Each pilot has a name, pilot number, qualification level, and flight hours. %
+Each pilot works for a given airline since a specific date. %
+Passengers are characterized by a passenger number, name, data of birth, and address.
+Flights have flight number, date, start airport, destination airport, and flight time.
+Each passenger can book an arbitrary number of such flights. %
+A flight is realized by a given pilot and airplane.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Jede Fluggesellschaft hat einen Namen, ein Heimatland, eine Heimatstadt, und eine Abkürzung. %
+Jedes Flugzeug hat eine Flugzeugnummer und ein Datum der letzten Inspektion. %
+Jedes Flugzeug hat einen bestimmten Typ, der durch seinen Name, die Anzahl der Sitzplätze und die Höchstgeschwindikeit charakterisiert wird. %
+Jedes Flugzeug gehört zu einer Fluggesellschaft ab einem bestimmten Datum. %
+Jeder Pilot hat einen Namen, eine Pilotennummer, eine Qualifikation, und eine Anzahl von Flugstunden. %
+Jeder Pilot arbeitet für eine bestimmte Fluggesellschaft ab einem bestimmten Datum. %
+Passagiere werden charakterisiert durch eine Passagiernummer, Name, Geburtsdatum und Adresse. %
+Flüge haben Flugnummern, Datum, Startflughafen, Zielflughafen, und eine Flugzeit. %
+Jeder Passagier kann eine beliebge Anzahl Flüge buchen. %
+Ein Flug wird von einem bestimmten Pilot und Flugzeug realisiert.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Company / Firma}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Every work group has a group number, name, and location. %
+Every employee has a worker's number, name, date of birth, salary, address, and job. %
+Every employee belongs to a work group. %
+Each project has a name and deadline. %
+Every employee works on at least one, but maybe multiple projects. %
+Each project has an employee as a leader.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Jede Arbeitsgruppe hat eine Gruppennummer, Name, und Ort. %
+Jeder Mitarbeiter hat eine Arbeiternummer, Name, Geburtsdatum, Gehalt, Adresse, und Arbeitsaufgabe. %
+Jeder Mitarbeiter gehört zu einer Arbeitsgruppe. %
+Jedes Projekt hat einen Namen und eine Deadline. %
+Jeder Mitarbeiter arbeitet an mindestens einem, vielleicht aber auch mehreren Projekten. %
+Jedes Projekt hat einen Mitarbeiter als Leiter.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Sports / Sportarten}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Every sports discipline has a name and a world, asia-, and olympic record. %
+There are competitions which have a competition number, date, location, start time, and type. %
+The competition type has a name, e.g., Asian Championship, Olympics, etc. %
+Every athlete has a name, age, sports club, and home country. %
+Every competition offers a set of sports disciplines and athletes can take part in multiple disciplines in multiple competitions. %
+Each athlete has a trainer, for whom we store the qualification, name, and date of birth. %
+A trainer can train arbitrarily many athletes.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Jede Sportdisziplin hat einen Namen und jeweils eine Welt-, Asien-, und Olympiarekord. %
+Es werden Wettkämpfe ausgetragen, die jeweils eine Wettkampfnummer, Datum, Ort, Uhrzeit und Art haben.
+Jede Wettkampfart hat einen Namen, \DEzB\ Asienmeisterschaft, Olympiade, usw. %
+Jeder Sportler hat einen Namen, Alter, Sportklub, und Heimatland. %
+Jeder Wettkampf kann bestimmte Sportarten anbieten und Sportler können an Wettkämpfen teilnehmen, und zwar jeweils in beliebig vielen Disziplinen. %
+Jeder Sportler hat einen Trainer, über den wir den Name, die Qualifikation, und das Geburtsdatum speichern.%
+Ein Trainer kann beliebig viele Sportler betreuen.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{ERDs: Hospital / Krankenhaus}%
+\begin{itemize}%
+\item[EN] Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+The work of a hospital should be stored and represented by a database. %
+Each patient has a patient-ID, a name, a date of birth, an address, an entry date, and exit date, and a diagnosis. %
+Each medicine has a name, a main chemical compound, and a producer. %
+Each department has a name and a specialization. %
+Each doctor has a doctor-ID, a name, and a phone number. %
+Each doctor belongs to a department. %
+Each room belongs to a department, has a room number, a number of beds, and a phone number.
+Each patient belongs to a room. %
+Each patient is treated by one or multiple doctors. %
+Each patient gets a specific dosage (number of administrations per day, amount per administration) of one or multiple medicines.%
+%
+\item[DE] Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Die Arbeit eines Krankenhauses soll in einer Datenbank repräsentiert werden. %
+Jeder Patient hat eine Patienten-ID, einen Namen, ein Geburtsdatum, eine Adresse, ein Einlieferungsdatum, ein Entlassungsdatum, und eine Diagnose. %
+Jede Medizin hat einen Namen, einen Hauptwirkstoff, und einen Produzenten. %
+Jede Abteilung hat einen Namen und eine Spezialisierung. %
+Jeder Arzt hat eine Arzt-ID, einen Namen, und eine Telefonnummer. %
+Jeder Arzt gehört zu einer Abteilung. %
+Jeder Raum gehört zu einer Abteilung und hat eine Raumnummer, eine Anzahl von Betten, und eine Telefonnummer. %
+Jeder Patient gehört zu einem Raum. %
+Jeder Patient kann von einem oder mehreren Ärzten behandelt werden. %
+Jeder Patient bekommt eine bestimmte Dosierung~(Anzahl der Anwendungen pro Tag, Menge pro Anwendung) von einer oder mehrerer Medizinen.%
+\end{itemize}%
+\end{question}%
+%%
+\endhsection%
