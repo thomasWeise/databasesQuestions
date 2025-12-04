@@ -1,0 +1,180 @@
+%
+\hsectionENDE{Normalization, Anomalies, and Keys}{Normalisation, Anomalien, und Schlüssel}%
+%
+\begin{questionENDE}{First Normal Form}{Erste Normalform}%
+\qENDE{%
+Explain in plain English what conditions a table must fulfill to be in the first normal form~(\glsShort{1NF}).%
+}{%
+Erklären Sie in einfachem Deutsch, welche Bedingungen eine Tabelle erfüllen muss, um in der ersten Normalform~(\glsShort{1NF}) zu sein.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Second Normal Form}{Zweite Normalform}%
+\qENDE{%
+Explain in plain English what conditions a table must fulfill to be in the second normal form~(\glsShort{2NF}).%
+}{%
+Erklären Sie in einfachem Deutsch, welche Bedingungen eine Tabelle erfüllen muss, um in der zweiten Normalform~(\glsShort{2NF}) zu sein.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Third Normal Form}{Erste Normalform}%
+\qENDE{%
+Explain in plain English what conditions a table must fulfill to be in the third normal form~(\glsShort{3NF}).%
+}{%
+Erklären Sie in einfachem Deutsch, welche Bedingungen eine Tabelle erfüllen muss, um in der dritten  Normalform~(\glsShort{3NF}) zu sein.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Functional Dependencies}{Funktionale Abhängigkeiten}%
+\qENDE{%
+Explain in plain English what conditions two columns $X$ and $Y$ must fulfill such that $Y$ is functionaly dependent on~$X$, i.e.,~\funcDepb{$Y$}{$X$}.%
+}{%
+Erklären Sie in einfachem Deutsch, welche Bedingungen zwei Spalten $X$ und $Y$ erfüllen müssen, so das $Y$ funktional von~$X$ abhängt, also das~\funcDepb{$Y$}{$X$}.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Insertion Anomaly}{Einfüge-Anomalie}%
+\qENDE{%
+Explain in plain English what an insertion anomaly is.%
+}{%
+Erklären Sie in einfachem Deutsch was eine Einfüge-Anomalie ist.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Deletion Anomaly}{Lösch-Anomalie}%
+\qENDE{%
+Explain in plain English what an deletion anomaly is.%
+}{%
+Erklären Sie in einfachem Deutsch was eine Lösch-Anomalie ist.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Update Anomaly}{Update-Anomalie}%
+\qENDE{%
+Explain in plain English what an update anomaly is.%
+}{%
+Erklären Sie in einfachem Deutsch was eine Update-Anomalie ist.%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Functional Dependencies}{Funktionale Abhängigkeiten}%
+%
+\qENDE{%
+Assume that a table stors data about people in the columns given below. %
+Explain which columns are probably functionally dependent on which other columns.%
+\begin{itemize}%
+\item national\_id: the Chinese mainland ID number,%
+\item mobile: the mobile phone number,%
+\item name: the full name of the person,%
+\item dob: the date of birth of the person,%
+\item province: the province where the person lives,%
+\item city: the city where the person lives,%
+\item address: the street address of the person.%
+\end{itemize}%
+}{%
+Nehmen Sie an, dass eine Tabelle Daten über Leute in den Spalten wie unten angegeben speichert.%
+Erklären Sie welche Spalten wahrscheinlich funktional von welchen anderen Spalten abhängen werden.%
+\begin{itemize}%
+\item national\_id: die chinesische Ausweisnummer,%
+\item mobile: die Mobiltelefonnummer,%
+\item name: der volle Name der Person,%
+\item dob: das Geburtsdatum der Person,%
+\item province: die Provinz, in der die Person lebt,%
+\item city: die Stadt, in der die Person lebt,%
+\item address: die Adresse (Straße, Hausnummer, \dots), unter der die Person lebt.%
+\end{itemize}%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Functional Dependencies and Keys}{Funktionale Abhängigkeiten und Schlüssel}%
+%
+\begin{center}%
+\begin{tabular}{|l|c|c|c|c|c|}%
+\hline%
+Lecture&Room&Day&Lesson&Students&Professor\\%
+\hline%
+Databases&202&Mon&2&40&Weise\\%
+Deep Learning&201&Tue&2&30&Wu\\%
+C Programming&202&Wed&5&55&Zhou\\%
+Databases&206&Wed&2&40&Weise\\%
+System's Security&208&Thu&2&36&Wang\\%
+Deep Learning&201&Fri&4&30&Wu\\%
+System's Security&210&Fri&2&36&Wang\\%
+Embedded Systems&210&Fri&4&25&Chen\\%
+Python Programming&204&Fri&4&60&Weise\\%
+\hline%
+\end{tabular}%
+\end{center}%
+%
+\qENDE{%
+Find all the meaningful functional dependencies in the table above. %
+Which candidate keys do exist in this table?%
+}{%
+Finden Sie all sinnvollen funktionalen Abhängigkeiten in der Tabelle oben. %
+Welche Schlüsselkandidaten gibt es?%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{First Normal Form}{Erste Normalform}%
+\qENDE{%
+The table \emph{guest} has the columns guest\_id, guest\_family\_name, guest\_given\_name, guest\_address\_1, guest\_address\_2, guest\_mobile\_1, guest\_mobile\_2. %
+It is used to store the information of guests of a hotel.%
+\begin{enumerate}%
+\item Find the proper key for the table.%
+\item What happens if a guest wants to provide three contact addresses?%
+\item Transform the table to the first normal form~(\glsShort{1NF}).%
+\end{enumerate}%
+}{%
+Die Tabelle \emph{gast} hat die Spalten gast\_id, gast\_familienname, guest\_vorname, gast\_adresse\_1, gast\_adresse\_2, gast\_mobil\_1, gast\_mobil\_2. %
+Sie wird verwendet, um die Informationen über Gäste eines Hotels zu speichern.%
+\begin{enumerate}%
+\item Finden Sie die passenden Schlüssel der Tabelle.%
+\item Was passiert, wenn ein Gast drei Kontaktadressen hinterlegen möchte?%
+\item Überführen Sie die Tabelle in die erste Normalform~(\glsShort{1NF}).%
+\end{enumerate}%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Second Normal Form}{Zweite Normalform}%
+\qENDE{%
+The table \emph{occupation} has the columns guest\_id, room\_id, day, guest\_family\_name, and guest\_given\_name. %
+It is used to store the day-to-day occupation in the rooms of a hotel.%
+\begin{enumerate}%
+\item Find the proper key(s) for the table.%
+\item Analyze the table for potential anomalies.%
+\item Transform the table to the second normal form~(\glsShort{2NF}).%
+\end{enumerate}%
+}{%
+Die Tabelle \emph{belegung} hat die Spalten gast\_id, raum\_id, tag, gast\_familienname und gast\_vorname. %
+Sie wird verwendet, um die tägliche Belegung der Räume eines Hotels zu speichern.%
+\begin{enumerate}%
+\item Finden Sie die passenden Schlüssel der Tabelle.%
+\item Analysieren Sie die Tabelle auf mögliche Anomalien.%
+\item Überführen Sie die Tabelle in die zweite Normalform~(\glsShort{2NF}).%
+\end{enumerate}%
+}%
+\end{questionENDE}%
+%
+\begin{questionENDE}{Third Normal Form}{Dritte Normalform}%
+\qENDE{%
+The table \emph{bill} has the columns bill\_id, guest\_id, guest\_name, guest\_address, and amount. %
+The primary key is bill\_id. %
+The table is used to store they billing information of a hotel.%
+\begin{enumerate}%
+\item Is this table in the second normal form~(\glsShort{2NF})? Why/why not?%
+\item Analyze the table for potential anomalies.%
+\item Transform the table to the third normal form~(\glsShort{3NF}).%
+\end{enumerate}%
+}{%
+Die Tabelle \emph{rechnung} hat die Spalten rechnungs\_id, gast\_id, gast\_name, gast\_adresse und betrag. %
+Der Primärschlüssel ist rechnungs\_id. %
+Die Tabelle wird verwendet, um die Rechnungsinformation eines Hotels zu speichern.%
+\begin{enumerate}%
+\item Ist die Tabelle in der zweiten Normalform~(\glsShort{2NF})? Warum/Warum nicht?%
+\item Analysieren Sie die Tabelle auf mögliche Anomalien.%
+\item Überführen Sie die Tabelle in die dritte Normalform~(\glsShort{3NF}).%
+\end{enumerate}%
+}%
+\end{questionENDE}%
+%
+\endhsection%
