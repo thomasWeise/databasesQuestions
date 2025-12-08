@@ -33,7 +33,7 @@ Was sind \emph{Schlüssel} im konzeptuellen Modell?%
 %
 \begin{questionENDE}{Keys}{Schlüssel}%
 \qENDE{%
-What are \emph{(cnadidate) keys} and \emph{primary keys} in the conceptual model? %
+What are \emph{(candidate) keys} and \emph{primary keys} in the conceptual model? %
 What is the difference between them?%
 }{%
 Was sind \emph{Schlüssel(kandidaten)} und \emph{Primärschlüssel} im konzeptuellen Modell? %
@@ -86,6 +86,18 @@ Erklären Sie alle Entitätstypen, Attribute, Primärschlüssel, Beziehungen, so
 \end{question}%
 %
 %
+%
+\begin{questionENDE}{Simple Single-Valued Attribute}{Einfaches Einwertiges Attribut}%
+\qENDE{%
+Explain what a simple single-valued attribute is in the entity-relationship model. %
+Give an example.%
+}{%
+Erklären Sie, was ein einfaches einwertiges Attribute in einem Entity-Relationship-Modell ist. %
+Geben Sie ein Beispiel.%
+}%
+\end{questionENDE}%
+%
+%
 \begin{question}{ERDs}%
 \begin{center}%
 \includegraphics[width=0.5\linewidth]{\currentDir/graphics/erdStudentModule1}%
@@ -99,14 +111,14 @@ Erklären Sie alle Entitätstypen, Attribute, Primärschlüssel, Beziehungen, so
 %
 \begin{questionENDE}{Office ERD}{Büros ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 Every office has a room number. %
 Every employee has a name, title, and worker's number. %
 Every office offers some work stations, each of which having a station number. %
 Every employee occupies one of the work stations, starting from a certain date. %
 Every office has one or multiple telephones, each with a certain phone number.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Jedes Büro hat eine Zimmernummer. %
 Jeder Mitarbeiter hat einen Name, Titel, und Arbeiternummer. %
 Jedes Büro bietet eine Menge von Arbeitsplätzen, die jeweils eine Platznummer haben. %
@@ -207,6 +219,17 @@ Geben Sie ein Beispiel.%
 \end{questionENDE}%
 %
 %
+%
+\begin{questionENDE}{Compositie Multi-Valued Attribute}{Zusammengesetztes Mehrwertiges Attribut}%
+\qENDE{%
+Explain what a compositve multi-valued attribute is in the entity-relationship model. %
+Give an example.%
+}{%
+Erklären Sie, was ein zusammengesetztes mehrwertiges Attribute in einem Entity-Relationship-Modell ist. %
+Geben Sie ein Beispiel.%
+}%
+\end{questionENDE}%
+%
 \begin{question}{ERDs}%
 \begin{center}%
 \includegraphics[width=0.95\linewidth]{\currentDir/graphics/erdPersonStudentFaculty1}%
@@ -245,7 +268,7 @@ Jeder Essensplan kann von einer beliebigen Anzahl von Grundschülern aboniert we
 %
 \begin{questionENDE}{Furniture ERD}{Möbel ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 A furniture store sells furniture. %
 Each type of furniture has a type-ID, a name, and a price. %
 It can be purchased and sold in variants, which are characterized by a name, color, and wood pattern. %
@@ -255,7 +278,7 @@ The company has salespeople~(employee-ID, name, date of birth, date of hiring, s
 A salesperson can acquire and be responsible for arbitrarily many customers~(customer-ID, name, address).
 The customers can issue purchase orders, characterized by an order-ID, furniture variant, amount, and deadline.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Ein Möbelladen verkauft Möbel. %
 Jeder Möbel-Typ hat eine Typ-ID, einen Namen, und einen Preis. %
 Möbel eines Types kann in verschiedenen Varianten gekauft und verkauft werden, welche jeweils einen Namen, eine Farbe und eine Holzmaserung aufweisen. %
@@ -290,9 +313,22 @@ Geben Sie ein Beispielszenario an, wo das Verwenden der Telefonnummer als Primä
 \end{questionENDE}%
 %
 %
+%
+\begin{questionENDE}{Weak Entities}{Schwache Entitäten}%
+\qENDE{%
+Explain what a weak entity is in the entity-relationship model. %
+Why do we need weak entities? %
+Give an example.%
+}{%
+Erklären Sie, was eine schwache Entität in einem Entity-Relationship-Modell ist. %
+Wofür brauchen wir schwachte Entitäten? %
+Geben Sie ein Beispiel.%
+}%
+\end{questionENDE}%
+%
 \begin{questionENDE}{Soccer ERD}{Fußball ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 We develop a soccer \db. %
 Every player has a name and age.
 Ever game takes place on a certain game day. %
@@ -301,7 +337,7 @@ In each game, one team participates as home team and one as guest team. %
 We store which player plays in which game, together with the starting and ending minute of their participation. %
 Every team has a trainer, of whom we store name and age.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Es wird eine Fußballdatenbank entwickelt. %
 Jeder Spieler hat einen Namen und ein Alter. %
 Jedes Spiel findet an einem Spieltag statt. %
@@ -360,7 +396,7 @@ Geben Sie ein Beispiel.%
 %
 \begin{questionENDE}{Airline ERD}{Fluggesellschaft ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 Every airline has a name, home country, hometown, and abbreviation. %
 An airplane has an airplane number and date of last inspection. %
 Each airplane belongs to a given type, which is described by its name, number of seats, and top speed. %
@@ -372,7 +408,7 @@ Flights have flight number, date, start airport, destination airport, and flight
 Each passenger can book an arbitrary number of such flights. %
 A flight is realized by a given pilot and airplane.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Jede Fluggesellschaft hat einen Namen, ein Heimatland, eine Heimatstadt, und eine Abkürzung. %
 Jedes Flugzeug hat eine Flugzeugnummer und ein Datum der letzten Inspektion. %
 Jedes Flugzeug hat einen bestimmten Typ, der durch seinen Name, die Anzahl der Sitzplätze und die Höchstgeschwindikeit charakterisiert wird. %
@@ -441,7 +477,7 @@ Geben Sie ein Beispiel.%
 %
 \begin{questionENDE}{Company ERD}{Firma ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 Every work group has a group number, name, and location. %
 Every employee has a worker's number, name, date of birth, salary, address, and job. %
 Every employee belongs to a work group. %
@@ -449,7 +485,7 @@ Each project has a name and deadline. %
 Every employee works on at least one, but maybe multiple projects. %
 Each project has an employee as a leader.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Jede Arbeitsgruppe hat eine Gruppennummer, Name, und Ort. %
 Jeder Mitarbeiter hat eine Arbeiternummer, Name, Geburtsdatum, Gehalt, Adresse, und Arbeitsaufgabe. %
 Jeder Mitarbeiter gehört zu einer Arbeitsgruppe. %
@@ -508,9 +544,21 @@ In jede Vorlesung ist mindestens ein Student eingeschrieben.%
 \end{questionENDE}%
 %
 %
+%
+\begin{questionENDE}{Simple Multi-Valued Attribute}{Einfaches Mehrwertiges Attribut}%
+\qENDE{%
+Explain what a simple multi-valued attribute is in the entity-relationship model. %
+Give an example.%
+}{%
+Erklären Sie, was ein einfaches mehrwertiges Attribute in einem Entity-Relationship-Modell ist. %
+Geben Sie ein Beispiel.%
+}%
+\end{questionENDE}%
+%
+%
 \begin{questionENDE}{Sports ERD}{Sportarten ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 Every sports discipline has a name and a world, asia-, and olympic record. %
 There are competitions which have a competition number, date, location, start time, and type. %
 The competition type has a name, e.g., Asian Championship, Olympics, etc. %
@@ -519,7 +567,7 @@ Every competition offers a set of sports disciplines and athletes can take part 
 Each athlete has a trainer, for whom we store the qualification, name, and date of birth. %
 A trainer can train arbitrarily many athletes.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Jede Sportdisziplin hat einen Namen und jeweils eine Welt-, Asien-, und Olympiarekord. %
 Es werden Wettkämpfe ausgetragen, die jeweils eine Wettkampfnummer, Datum, Ort, Uhrzeit und Art haben.
 Jede Wettkampfart hat einen Namen, \DEzB\ Asienmeisterschaft, Olympiade, usw. %
@@ -597,7 +645,7 @@ Jede Email kann beliebig oft beantwortet werden.%
 %
 \begin{questionENDE}{Hospital ERD}{Krankenhaus ERD}%
 \qENDE{%
-Design an Entity-Relationship Model (using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
+Design an Entity-Relationship Model~(using the original notation with rectangles, diamonds, and ellipses) for this scenario: %
 The work of a hospital should be stored and represented by a database. %
 Each patient has a patient-ID, a name, a date of birth, an address, an entry date, and exit date, and a diagnosis. %
 Each medicine has a name, a main chemical compound, and a producer. %
@@ -609,7 +657,7 @@ Each patient belongs to a room. %
 Each patient is treated by one or multiple doctors. %
 Each patient gets a specific dosage (number of administrations per day, amount per administration) of one or multiple medicines.%
 }{%
-Entwerfen Sie ein Entity-Relationship Modell (in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
+Entwerfen Sie ein Entity-Relationship Modell~(in der Originalnotation mit Rechtecken, Rauten, und Ellipsen) für folgende Situation: %
 Die Arbeit eines Krankenhauses soll in einer Datenbank repräsentiert werden. %
 Jeder Patient hat eine Patienten-ID, einen Namen, ein Geburtsdatum, eine Adresse, ein Einlieferungsdatum, ein Entlassungsdatum, und eine Diagnose. %
 Jede Medizin hat einen Namen, einen Hauptwirkstoff, und einen Produzenten. %
@@ -676,6 +724,18 @@ Erklären Sie alle Entitätstypen, Attribute, Primärschlüssel, Beziehungen, so
 }%
 \end{question}%
 %
+%
+\begin{questionENDE}{Compositie Single-Valued Attribute}{Zusammengesetztes Einwertiges Attribut}%
+\qENDE{%
+Explain what a compositve single-valued attribute is in the entity-relationship model. %
+Give an example.%
+}{%
+Erklären Sie, was ein zusammengesetztes einwertiges Attribute in einem Entity-Relationship-Modell ist. %
+Geben Sie ein Beispiel.%
+}%
+\end{questionENDE}%
+%
+%
 \begin{question}{ERDs}%
 \begin{center}%
 \includegraphics[width=0.8\linewidth]{\currentDir/graphics/erdDeliverables1}%
@@ -710,6 +770,21 @@ Erklären Sie alle Entitätstypen, Attribute, Primärschlüssel, Beziehungen, so
 \end{question}%
 %
 %
+\begin{questionENDE}{Weak and Strong Entities}{Schwache und Starke Entitäten}%
+\qENDE{%
+Explain what weak and strong entities are in the entity-relationship model. %
+What is their difference? %
+Why do we need weak entities?
+Give an example for each.%
+}{%
+Erklären Sie, was schwache und starke Entitäten in einem Entity-Relationship-Modell sind. %
+Was ist der Unterschied zwischen beiden? %
+Wofür brauchen wir schwachte Entitäten? %
+Geben Sie jeweils ein Beispiel.%
+}%
+\end{questionENDE}%
+%
+%
 \begin{questionENDE}{Relationship Cardinality and Modality}{Beziehungskardinalität und -modalität}%
 \qENDE{%
 Explain the meaning of the \crowsFoot{A}{O1}{B}{O1} relationship pattern. %
@@ -719,7 +794,5 @@ Erklären Sie die Bedeutung des Beziehungsformats \crowsFoot{A}{O1}{B}{O1}. %
 Geben Sie ein Beispiel.%
 }%
 \end{questionENDE}%
-%
-%
 %
 \endhsection%
